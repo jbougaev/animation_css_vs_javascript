@@ -1,0 +1,22 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+ body, #presentation, #slides {
+            -webkit-transition: all 1.5s linear;
+            -moz-transition: all 1.5s linear;
+            -ms-transition: all 1.5s linear;
+            -o-transition: all 1.5s linear;
+            transition: all 1.5s linear;
+        }
+
+        body {
+            counter-reset: sections;
+        }
+
+        header h1.sectiontitle:before {
+            content: "Part " counter(sections) ": ";
+            counter-increment: sections;
+        }

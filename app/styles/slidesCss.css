@@ -1,0 +1,304 @@
+.container{
+    position:relative;   
+}
+
+.follow {
+    width: 280px;
+    height: 70px;
+    margin: 0; /*for centering purposes*/
+/*    float: left;*/
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out 100ms;
+    font-size: 35px;
+    line-height: 70px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: helvetica, arial;
+    display: block;
+    position: relative;
+    background: #FF4447;
+  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FF4447), color-stop(.5, #FF4447), color-stop(.5, #FF4447), to(#9A0608));
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #F10D0D;
+    border-top: 1px solid #F10D0D;
+    text-shadow: 1px 1px 1px black;
+    -moz-box-shadow: 0 1px 3px black;
+    -webkit-box-shadow: 0 1px 3px black;
+    box-shadow: 0 1px 3px black;
+    cursor: pointer;
+}
+.followRotate {
+    width: 280px;
+    height: 70px;
+    margin: 0; /*for centering purposes*/
+    float: left;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    font-size: 35px;
+    /*line-height: 70px;*/
+    font-weight: bold;
+    /*text-align: center;*/
+    color: white;
+    text-decoration: none;
+    font-family: helvetica, arial;
+    display: block;
+    position: relative;
+    background: #014464;
+    background: -moz-linear-gradient(top, #0D658E, #0C577A 50%, #014D71 51%, #003E5C);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0E658E), color-stop(.5, #0C577A), color-stop(.5, #014D71), to(#003E5C));
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #368DBE;
+    border-top: 1px solid #c3d6df;
+/*
+    text-shadow: 1px 1px 1px black;
+    -moz-box-shadow: 0 1px 3px black;
+    -webkit-box-shadow: 0 1px 3px black;
+    box-shadow: 0 1px 3px black;
+*/
+    cursor: pointer;
+}
+
+.followRotate span {
+    position: absolute;
+    top: 15px;
+    left:50px;
+    white-space: nowrap;
+}
+    .follow:hover {
+        width: 300px;
+        height: 100px;
+        margin: -10px;
+        background-color: rgb(234, 112, 6);
+        line-height: 100px;
+        font-size: 50px;
+    }
+
+.element {
+    width: 100px;
+    height: 100px;
+    background: #FF4447;
+}
+
+.rotate {
+    transform: rotate(30deg);
+
+}
+
+.rotate span {
+     /*position: absolute;
+    top: 15px;
+    left: 100px;
+    white-space: nowrap;*/
+}
+
+
+/*falling letters*/
+#fallingLetters {
+    font-family: 'Orbitron', sans-serif; /* font style. Default uses Google fonts */
+    text-shadow: 2px 2px black, 3px 3px #257985, 4px 4px #257985, 5px 5px #257985, 6px 6px #257985;
+    font-size: 4rem; 
+    color: #FF4447;
+    letter-spacing: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#fallingLetters span {
+    display: inline-block;
+}
+
+.dropped span {
+    -moz-transform: translateY(300px) rotateZ(120deg); /* rotate, translate, and disappear */
+    -webkit-transform: translateY(300px) rotateZ(120deg);
+    transform: translateY(300px) rotateZ(120deg);
+    opacity: 0;
+    -moz-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+.containerL {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;  
+}
+/*end of falling letters*/
+
+/*ball*/
+.containerB {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    border-left: 5px solid #257985;  
+    box-shadow: 0 4px 2px -2px #257985;
+}
+
+.animate .ball, .animate .shadow {
+    background: radial-gradient(circle at 34px 13px, white 5%, #FF4447 100%);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 25px;
+    left: 225px;
+    border-radius: 50px;
+    z-index: 2;
+    -webkit-animation: ball-y 2s;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.animate .ball-path {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-animation: ball-x 2.5s cubic-bezier(0, 0, 0.35, 1);
+}
+
+.animate .spin {
+    -webkit-animation: spin 2.5s;
+}
+
+.animate .wobble {
+    -webkit-animation: wobble 2s;
+}
+
+.animate .shadow {
+    background: #5F5C5C;
+    -webkit-animation: none;
+    -webkit-transform: scaleY(0.25);
+    bottom: 0;
+    z-index: 1;
+}
+
+@-webkit-keyframes ball-x {
+    0% {
+        -webkit-transform: translateX(-275px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes ball-y {
+    0% {
+        -webkit-transform: translateY(-205px);
+        -webkit-animation-timing-function: ease-in;
+    }
+
+    40% {
+        -webkit-transform: translateY(-100px);
+        -webkit-animation-timing-function: ease-in;
+    }
+
+    65% {
+        -webkit-transform: translateY(-52px);
+        -webkit-animation-timing-function: ease-in;
+    }
+
+    82% {
+        -webkit-transform: translateY(-25px);
+        -webkit-animation-timing-function: ease-in;
+    }
+
+    92% {
+        -webkit-transform: translateY(-12px);
+        -webkit-animation-timing-function: ease-in;
+    }
+
+    25%, 55%, 75%, 87%, 97%, 100% {
+        -webkit-transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+    }
+}
+
+@-webkit-keyframes wobble {
+    0%, 24%, 54%, 74%, 86%, 96%, 100% {
+        -webkit-transform: scaleX(1.0);
+    }
+
+    25%, 55%, 75% {
+        -webkit-transform: scaleX(1.3) scaleY(0.8) translateY(10px);
+    }
+    /* Points hitting floor */
+    30%, 60%, 80% {
+        -webkit-transform: scaleX(0.8) scaleY(1.2);
+    }
+    /* Wobble inwards */
+    75%, 87% {
+        -webkit-transform: scaleX(1.2);
+    }
+
+    97% {
+        -webkit-transform: scaleX(1.1);
+    }
+}
+
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(-180deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+/*end of ball*/
+
+/*2 wys to create javascript animation*/
+#twoWaysJS  li { display: inline; white-space: nowrap;float:left;     margin-right: 108px; }
+#twoWaysJS li:before { content: " \00b7"; font-size:3rem; }
+
+/*ease functions*/
+.example_path{position:relative;overflow:hidden;width:430px;height:30px;border:3px solid #000;}.example_path .example_block{position:absolute;background-color:#FF4447;width:30px;height:24px;padding-top:10px;text-align:center;color:#fff;font-size:10px;white-space:nowrap;}
+
+/*links*/
+
+.slink, .slink:hover, .slink:active, .slink:focus{
+text-decoration: none;
+    color: black;
+     outline: 0;
+
+}
+
+/*code*/
+
+.codeS{
+background-color: #257985; 
+padding:10px;
+color:white;
+}
+
+
+/*train*/
+ #train, #train1 {
+      position: relative;
+      cursor: pointer;
+    }
+
+/*textarea*/
+textarea, textarea:focus {
+    outline: none !important;
+    border:0px solid #FF4447;
+    box-shadow: 0 0 10px #5EA8A7;
+    background-color: #257985;
+    color:white;
+}
