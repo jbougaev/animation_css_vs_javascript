@@ -39,109 +39,86 @@
     <div id="presentation">
         <div id="presentation-counter"></div>
         <div id="slides">
-            <!----------------------------------------------------------------------------------------------------------Slide 1-->
+            <!-----------------------------------------------------------------------------------------------------------Slide 1-->
             <div class="slide intro slide-back-white">
-
-                <section style="display:block; font-size:7rem; padding-top:100px;">
-                    <font style="color:#257985; font-size: 10rem; font-weight: bold; ">ANIMATION</font><br />
-                    <font style="font-size:6rem;color:#5EA8A7">CSS</font> <font style="font-size:5rem;">vs</font> <font style="font-size:6rem;color:#5EA8A7">Javascript</font>
+                <section>
+                    <span>ANIMATION</span><br />                  
+                    <span>CSS</span>
+                    <span>vs</span>
+                    <span>Javascript</span>
                 </section>
             </div>
-            <!----------------------------------------------------------------------------------------------------------Slide 2-->
-            <div class="slide slide-back-white">
-                <section class="slide-content">
-                    <br />
-                    <font style="color:black; font-size: 5rem; font-weight: bold; ">Two primary ways to create animations on the web:</font><br /><br /> <br />
-                    <font style="color:#257985; font-size: 4rem; font-weight: bold; "> 1. using CSS </font><br /><br />
-                    <font style="color:#257985; font-size: 4rem; font-weight: bold; ">2. using JavaScript</font><br /><br />
+            <!-----------------------------------------------------------------------------------------------------------Slide 2-->
+            <div class="slide slide-back-white slide2">
+                <section>                   
+                    <span>Two primary ways to create animations on the web:</span>
+                    <span>1. using CSS </span><br />
+                    <span>2. using JavaScript</span>
                 </section>
             </div>
             <!-----------------------------------------------------------------------------------------------------------Slide 3-->
-            <div class="slide slide-back-white">
-                <section>
-                    <br />  <br />  <br />
-                    <font style="color:#257985; font-size: 5rem; font-weight: bold; margin-left:50px; margin-top:50px;">USING CSS</font>
-                    <br /><br /><br /><br />
-                    <font style="color:black; font-size: 3rem; font-weight: bold; margin-left:50px;">Two techniques to create CSS animation:</font><br /><br /><br />
-
-                    <ul style="color:black; font-size: 4rem; font-weight: bold; margin-left:50px;">
+            <div class="slide slide-back-white slide3">
+                <section>                   
+                    <span>USING CSS</span>                   
+                    <span>Two techniques to create CSS animation:</span>                     
+                    <ul>
                         <li>CSS transitions</li>
                         <li>CSS animations </li>
                     </ul>
                 </section>
             </div>
             <!-----------------------------------------------------------------------------------------------------------Slide 4-->
-            <div class="slide slide-back-white">
-           <div style=" height:26%;margin-left:-25px;">
-                    <font style="color:#257985; font-size: 3.7rem; font-weight: bold; margin-left: 50px">CSS TRANSITIONS</font>
-               
-               <br/>
-                <br/>
-                <br/>
-                    <div style="position:relative;margin-left:100px;">
-                        
-                        
-                        <div class="codeS" style="float:left;font-size: 2rem;margin-right: 90px; ">
-                            <b>.button</b> {<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:&nbsp; 280px;<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: 70px;<br />
-                            }<br />
-                        </div>
-                        
-
-                      
-                        <div  style="float:left; width: 310px;margin-left:20px;">
-                        <div class="follow" style="margin:15px auto 0 auto;display: table; ">Hover</div>
-                        </div>
-                          <div class="codeS" style="float:left;font-size: 2rem;margin-left:105px;">
-
-                            <b>.button:hover</b> {<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: &nbsp;300px;<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: 100px;<br />
-                            }<br />
-                        </div>
-                        
-                        <div style="clear:both;"></div>
-
-                    </div>
-                </div>
-
-                <div style=" height:35%; margin-left:-25px;">
-                   
-                    <div style="margin:0 auto; display:table;">
-                        <div style="font-size:2rem;margin-left:25px;">
-                             <br/>
-                            <font style="color:black; font-size: 2rem; font-weight:bold; "> transition: width 400ms ease-out 100ms;</font>                           
+            <div class="slide slide-back-white slide4">
+                <header>CSS TRANSITIONS</header>   
+                <section>
+                    <div>
+                        <div>
+                            <div class="codeS">
+                                <b>.button</b> {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:&nbsp; 280px;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: 70px;<br />
+                                }<br />
+                            </div>
+                            <div>
+                                <div class="follow">Hover</div>
+                            </div>
+                            <div class="codeS">
+                                <b>.button:hover</b> {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: &nbsp;300px;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: 100px;<br />
+                                }<br />
+                            </div>                        
+                            <div class="clearboth"></div>
                         </div>
                     </div>
-                </div>
-                 <div style=" height:39%; margin-left:5px;">
-
-                   
-                    <div style=" display:table;">
-                        <div style="font-size:2rem;margin-left:25px;">
-                           
-                            <font style="font-size: 2rem; font-weight:bold; ">To create a transition effect:</font>
-                            <font style="font-size: 1.5rem; ">
-                                <br />1. CSS property: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height, width, font-size, etc. OR all;<br />
-                                2. duration of the effect: &nbsp;&nbsp;&nbsp;&nbsp;400ms;<br />
-                                3. timing function: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;linear, ease-in, ease-out, etc;<br />
-                                4. delay: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100ms;<br />
-                            </font>
+                    <div>                   
+                        <div>
+                            <div>                                
+                                <span> transition: width 400ms ease-out 100ms;</span>                           
+                            </div>
                         </div>
                     </div>
-                </div>
-               
-                
+                    <div>                   
+                        <div>
+                            <div>
+                                <span>To create a transition effect:</span>
+                                <span>
+                                    <br />1. CSS property: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  target="_blank" class=slink href="http://www.w3.org/TR/css3-transitions/#properties-from-css-">height</a>, width, font-size, etc. OR all;<br />
+                                    2. duration of the effect: &nbsp;&nbsp;&nbsp;&nbsp;400ms;<br />
+                                    3. timing function: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" class=slink href="http://cubic-bezier.com">linear</a>, ease-in, ease-out, etc;<br />
+                                    4. delay: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100ms;<br />
+                                </span>
+                            </div>
+                        </div>
+                    </div> 
+                 </section>
             </div>
             <!-----------------------------------------------------------------------------------------------------------Slide 5-->
-            <div class="slide slide-back-white">
-
-                <section class="intro1">
-                    <font style="color:#257985; font-size: 3.7rem; font-weight: bold; margin-right: 15px; float:right;    margin-top: -20px;">CSS TRANSITIONS</font>
+            <div class="slide slide-back-white slide5">
+                <header>CSS TRANSITIONS</header>
+                <section>                   
                     <div class="hovercss">
-
-                        <h2 style="font-weight:bold;">2D Transitions</h2>
+                        <h2>2D Transitions</h2>
                         <a href="#" class="hvr-grow">Grow</a>
                         <a href="#" class="hvr-shrink">Shrink</a>
                         <a href="#" class="hvr-bounce-in">Bounce In</a>
@@ -151,21 +128,16 @@
                         <a href="#" class="hvr-float">Float</a>
                         <a href="#" class="hvr-sink">Sink</a>
                         <a href="#" class="hvr-skew">Skew</a>
-                        <a href="#" class="hvr-skew-forward">Skew Forward</a>
-                        <a href="#" class="hvr-skew-backward">Skew Backward</a>
-                        <h2 style="font-weight:bold;">Background Transitions</h2>
+                        <a href="#" class="hvr-skew-forward">Skew Forward</a>                       
+                        <h2>Background Transitions</h2>
                         <a href="#" class="hvr-fade">Fade</a>
                         <a href="#" class="hvr-sweep-to-right">Sweep To Right</a>
                         <a href="#" class="hvr-sweep-to-bottom">Sweep To Bottom</a>
                         <a href="#" class="hvr-bounce-to-right">Bounce To Right</a>
                         <a href="#" class="hvr-bounce-to-bottom">Bounce To Bottom</a>
-                        <a href="#" class="hvr-radial-out">Radial Out</a>
-                        <a href="#" class="hvr-radial-in">Radial In</a>
-                        <a href="#" class="hvr-rectangle-in">Rectangle In</a>
-                        <a href="#" class="hvr-rectangle-out">Rectangle Out</a>
-                        <a href="#" class="hvr-shutter-in-horizontal">Shutter In Horizontal</a>
-                        <a href="#" class="hvr-shutter-out-vertical">Shutter Out Vertical</a>
-                        <h2 style="font-weight:bold;">Border Transitions</h2>
+                        <a href="#" class="hvr-radial-out">Radial Out</a>                       
+                        <a href="#" class="hvr-rectangle-in">Rectangle In</a> 
+                        <h2>Border Transitions</h2>
                         <a href="#" class="hvr-border-fade">Border Fade</a>
                         <a href="#" class="hvr-hollow">Hollow</a>
                         <a href="#" class="hvr-trim">Trim</a>
@@ -174,7 +146,7 @@
                         <a href="#" class="hvr-reveal">Reveal</a>
                         <a href="#" class="hvr-underline-reveal">Underline Reveal</a>
                         <a href="#" class="hvr-overline-reveal">Overline Reveal</a>
-                        <h2 style="font-weight:bold;">Shadow and Glow Transitions</h2>
+                        <h2>Shadow and Glow Transitions</h2>
                         <a href="#" class="hvr-shadow">Shadow</a>
                         <a href="#" class="hvr-grow-shadow">Grow Shadow</a>
                         <a href="#" class="hvr-float-shadow">Float Shadow</a>
@@ -182,99 +154,88 @@
                         <a href="#" class="hvr-shadow-radial">Shadow Radial</a>
                         <a href="#" class="hvr-box-shadow-outset">Box Shadow Outset</a>
                         <a href="#" class="hvr-box-shadow-inset">Box Shadow Inset</a>
-                        <h2 style="font-weight:bold;">Curls</h2>
+                        <h2>Curls</h2>
                         <a href="#" class="hvr-curl-top-left">Curl Top Left</a>
                         <a href="#" class="hvr-curl-top-right">Curl Top Right</a>
                         <a href="#" class="hvr-curl-bottom-right">Curl Bottom Right</a>
                         <a href="#" class="hvr-curl-bottom-left">Curl Bottom Left</a>
                     </div>
-                    <font style="font-size: 1rem; display:block; float:right;opacity:0.5;">Hover.css Copyright Ian Lunn 2014.</font>
+                    <span>Hover.css Copyright Ian Lunn 2014.</span>
                 </section>
             </div>
             <!-----------------------------------------------------------------------------------------------------------Slide 6-->
-            <div class="slide slide-back-white">
-                <font style="color:#257985; font-size: 3.7rem; font-weight: bold; margin-left: 27px">CSS ANIMATIONS</font>
-                <section class="intro" style="margin-top:-30px;">                 
-
-                    <div class="container" style="margin-top:0px;">
-                        <div id="container" class="container containerL" style="float:left; padding-left:30px;vertical-align:top;margin-top:50px;">
-                            <div class="ball-path" style="vertical-align:top;">
+            <div class="slide slide-back-white slide6">
+                  <header>CSS TRANSITIONS</header>
+                <section>
+                    <div class="container">
+                        <div id="container" class="container containerL">
+                            <div class="ball-path">
                                 <div class="shadow"></div>
                             </div>
-                            <div class="ball-path" style="vertical-align:top;">
+                            <div class="ball-path">
                                 <div class="ball">
                                     <div class="wobble">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="codeS" style="vertical-align:top; float:right;font-size: 2rem;margin-right:30px;margin-top:20px;">
-                            @keyframes <font style="font-size:3.3rem;color:#FF4447;">ballX</font> {<br />
+                        <div class="codeS">
+                            @keyframes <span class="ballX">ballX</span> {<br />
                             &nbsp;&nbsp;&nbsp;&nbsp;0%  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {&nbsp;transform: translateX(-275px);&nbsp;}<br />
                             &nbsp;&nbsp;&nbsp;&nbsp;100%&nbsp;&nbsp;&nbsp; {&nbsp;transform: translateX(0px);&nbsp;}<br />
                             }<br />
                             .ballPath {<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;animation: <font style="font-size:3.3rem; color:#FF4447;">ballX</font> 2.5s cubic-bezier(0, 0, 0.35, 1);<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation: <span class="ballX">ballX</span> 2.5s cubic-bezier(0, 0, 0.35, 1);<br />
                             }
-
-
                         </div>
-                        <div style="clear:both;"></div>
+                        <div class="clearboth"></div>
                     </div>
-                     <div style=" margin-left:5px; margin-top: 15px; ">                         
-                          <div style="position:relative;">
-                        <div style="float:left;font-size: 2rem;margin-right: 50px; ">                      
-                        <div style="font-size:2rem;margin-left:10px;">                           
-                            <font style="font-size: 2rem; font-weight:bold; ">To create an animation:</font>
-                            <font style="font-size: 1.5rem; ">
-                                <br />1. animation-name<br />
-                                2. duration of the effect<br />
-                                3. timing function (linear, ease-in, ease-out, etc)<br />
-                               
-                            </font>                       
+                     <div>                         
+                        <div>
+                            <div>                      
+                                <div>                           
+                                    <span>To create an animation:</span>
+                                    <span class="size1point5">
+                                        <br />1. animation-name<br />
+                                        2. duration of the effect<br />
+                                        3. timing function (linear, ease-in, ease-out, etc)<br />                               
+                                    </span>                       
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <span class="size1point5">
+                                        <br />
+                                        4. delay<br />
+                                        5. iteration-count (1,2,3..., infinite)<br />
+                                        6. direction (normal,reverse,alternate, etc)
+                                    </span>
+                                </div>
+                            </div>                        
+                            <div class="clearboth"></div>
+                         </div>                    
                     </div>
-                        </div>                            
-                      
-                          <div style="float:left;font-size: 2rem;padding-right:0px;margin-left:50px;">
-                        <div style="font-size:2rem;margin-left:10px;">
-                            <font style="font-size: 1.5rem; ">
-                                <br />
-                                4. delay<br />
-                                5. iteration-count (1,2,3..., infinite)<br />
-                                6. direction (normal,reverse,alternate, etc)
-                            </font>
-                        
-                    </div>
-                        </div>                        
-                        <div style="clear:both;"></div>
-                    </div>   
-                   
-                </div>
                 </section>
             </div>
-            <!-----------------------------------------------------------------------------------------------------------Slide 7-->
-          
-            <div class="slide slide-back-white">              
-                    <font style="color:#257985; font-size: 3.7rem; font-weight: bold; margin-left:50px; margin-top:50px;">WHEN TO USE CSS ANIMATION</font>
-
-                    <br /><br /><br /><br />
-                    <font style="color:black; font-size: 3rem; font-weight: bold; margin-left:50px;">For smaller, self-contained states for UI elements.</font><br /><br /><br />
-                    <ul style="color:black; font-size: 3rem;  margin-left:50px;">
-                        <li class=big><a target="_blank" class=slink href="http://codepen.io/pedronauck/pen/jaluz">navigation</a> <a target="_blank" class=slink href="http://red-team-design.com/wp-content/uploads/2013/07/dropdown-menu-concept.html">menu</a>  </li>
+            <!-----------------------------------------------------------------------------------------------------------Slide 7-->          
+            <div class="slide slide-back-white slide7">              
+              <header>WHEN TO USE CSS ANIMATION</header>
+              <section>                   
+                    <span>For smaller, self-contained states for UI elements.</span>
+                    <ul>
+                        <li class=big><a target="_blank" class=slink href="http://codepen.io/pedronauck/pen/jaluz">navigation</a> <a  target="_blank" class=slink href="http://red-team-design.com/wp-content/uploads/2013/07/dropdown-menu-concept.html">menu</a>  </li>
                         <li class=big><a target="_blank" class=slink href="http://horaciobella.com/tooltips/">tooltip</a> </li>
                         <li class=big><a target="_blank" class=slink href="http://codepen.io/drygiel/full/rtpnE">slider</a></li>
                         <li class=big><a target="_blank" class=slink href="http://codepen.io/Manoz/full/pydxK">loading icons</a></li>
-                    </ul>
-              
+                        <li class=big><a target="_blank" class=slink href="http://www.cssanimals.com/?ref=webdesignernews.com">for fun</a></li>
+                    </ul>    
+              </section>
             </div>
             <!-----------------------------------------------------------------------------------------------------------Slide 8-->
-            <div class="slide slide-back-white">
-                <section>
-                    <br />  <br />  
-                    <font style="color:#257985; font-size: 5rem; font-weight: bold; margin-left:50px; margin-top:50px;">USING JAVASCRIPT</font>
-                    <br /><br /><br /><br />
-
-                    <ul style="color:black; font-size: 4rem; font-weight: bold; margin-left:50px;">
+            <div class="slide slide-back-white slide8">
+                <section>                   
+                    <span>USING JAVASCRIPT</span> 
+                    <ul>
                         <li>add or remove CSS classes</li>
                         <li>setInterval(function, delay)</li>
                         <li>setTimeout(function, delay)</li>
@@ -283,214 +244,117 @@
                 </section>
             </div>
             <!-----------------------------------------------------------------------------------------------------------Slide 9-->
-            <div class="slide slide-back-white">
-                <font style="color:#257985; font-size: 3.7rem; font-weight: bold; margin-left: 27px">TRANSITIONS USING JAVASCRIPT</font>
-                <section class="intro" style="margin-top:50px;">
-
-                    <font style="font-size: 2rem; ">
+            <div class="slide slide-back-white slide9">
+                <header>CSS TRANSITIONS</header>
+                <section>
+                    <span>
                         Use JavaScript to  programmatically add or remove CSS classes to simulate a CSS property change.
-                    </font>
-
-                    <div class="container" style="margin-top:20px;">
-                        <div id="container" class="container containerL" style="float:left; padding-left:30px;vertical-align:top;    margin-top: 90px;">
+                    </span>
+                    <div class="container">
+                        <div id="container" class="containerL">
                             <h3 id="fallingLetters" class="header">Lorem ipsum </h3>
                         </div>
-                        <div class="codeS" style="vertical-align:top; float:right;font-size: 2rem;margin-right:52px;margin-top:50px;">
+                        <div class="codeS">
                             .dropped {</br>
                             &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;transform: translateY(300px) rotateZ(120deg);</br>
                             &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; opacity: 0;</br>
                             &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;transition: all 0.3s ease-in;</br>
                             }</br>
                             element.classList.add("dropped");
-
                         </div>
-                        <div style="clear:both;"></div>
-
+                        <div class="clearboth"></div>
                     </div>
                 </section>
-            </div>
-            
+            </div>            
             <!-----------------------------------------------------------------------------------------------------------Slide 10-->
-            <div class="slide slide-back-white">
-
-                <font style="color:#257985; font-size: 3.7rem; font-weight: bold; margin-left: 27px; margin-bottom:20px;">JS ANIMATION: setInterval, setTimeout</font> 
-                    <div  style=" position:relative; height:50%;font-size: 2rem;    margin-top: 27px;">
-                        <div class=codeS style="width: 47%;  height:100%; float:left;">
-
+            <div class="slide slide-back-white slide10">
+                <header>CSS TRANSITIONS</header>
+                <section>
+                    <div>
+                        <div class=codeS>
                              var timer, fps = 50;&nbsp;&nbsp;&nbsp; <br />
-                           function draw() {<br />
+                             function draw() {<br />
                               &nbsp;&nbsp;&nbsp;&nbsp;if (time is over)&nbsp;&nbsp;&nbsp;{ clearInterval(timer); }<br />
                               &nbsp;&nbsp;&nbsp;&nbsp;else &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ inscrease left; }<br />
                             }<br />
                               setInterval(draw, 1000/fps);<br /><br />
-
-                        </div>
-                        
-                        <div class=codeS style="width: 50%;  height:100%; float:right;margin-left: 5px;    margin-right: 19px;">
-
+                        </div>                        
+                        <div class=codeS >
                              var timer, fps = 50;&nbsp;&nbsp;&nbsp; <br />
-                           function draw() {<br />
+                             function draw() {<br />
                                &nbsp;&nbsp;&nbsp;&nbsp;inscrease left;<br />
                               &nbsp;&nbsp;&nbsp;&nbsp;if (time is over)&nbsp;&nbsp;&nbsp;{ clearTimeout(timer); }<br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;else &nbsp;{ timer = setTimeout(draw,1000/fps); }<br />
-                              
+                             &nbsp;&nbsp;&nbsp;&nbsp;else &nbsp;{ timer = setTimeout(draw,1000/fps); }<br />                              
                             }<br />
                               draw();<br /><br />
-
-                        </div>
-                        
-                        <div style="clear:both;"></div>
+                        </div>                        
+                        <div class="clearboth"></div>
                     </div>
-
-                    <div style="position:relative; height:50%;font-size: 2rem;margin-top:20px;">
-                      <img id="train" src="https://js.cx/clipart/train.gif">
-                        <script>
-//    train.onclick = function() {
-//      var start = Date.now(); // сохранить время начала
-//
-//      var timer = setInterval(function() {
-//        // вычислить сколько времени прошло из opts.duration
-//        var timePassed = Date.now() - start;
-//
-//        train.style.left = timePassed / 5 + 'px';
-//
-//        if (timePassed > 4500) clearInterval(timer);
-//
-//      }, 20);
-//    }
-                             var timer ;
-      train.onclick = function() {
-      var start = Date.now(); // сохранить время начала
-
-     function draw(){
-          var timePassed = Date.now() - start;
-
-        train.style.left = timePassed / 5 + 'px';
-         
-         if (timePassed > 4500) {
-             clearTimeout(timer);
-         }else{         
-           timer = setTimeout(draw, 20);
-         }
-     }
-          draw();
-      }
-  </script>
+                    <div>
+                      <img id="train" src="https://js.cx/clipart/train.gif">                        
                     </div>
-
-
+                </section>
             </div>
             <!-----------------------------------------------------------------------------------------------------------Slide 11-->
-            <div class="slide slide-back-white">
-                    <font style="color:#257985; font-size: 3.7rem; font-weight: bold; margin-left: 27px; margin-bottom:20px;">JS ANIMATION: setInterval, setTimeout</font>
-                    <br /><br /><br /><br />
-                <font style="color:black; font-size: 3rem; font-weight: bold; margin-left: 58px; ">CONS:</font>
- <br /><br /> <br />
-                    <ul style="color:black; font-size: 3rem;  margin-left:50px;">
+            <div class="slide slide-back-white slide11">
+                    <header>JS ANIMATION: setInterval, setTimeout</header>
+                <section>                
+                <span>CONS:</span> 
+                    <ul>
                         <li>Not intended to be precise</li>
                         <li>Do not take into account what else is happening in the browser</li>
                         <li> Only update the screen when they want to, not when the computer is able to</li>                      
-                    </ul>            
+                    </ul> 
+                    </section>
             </div>
             <!-----------------------------------------------------------------------------------------------------------Slide 12-->
-            <div class="slide slide-back-white">
-                <font style="color:#257985; font-size: 3.7rem; font-weight: bold; margin-left: 27px">JS ANIMATION: requestAnimationFrame</font>               
-                    <div  style=" position:relative; height:100%;font-size: 2rem;    margin-top: 27px;    margin-left: 40px;">
-                                <div  style="width: 50%; height:100%; float:left; ">                  
-                                        <div class=codeS style="height:33%; float:left;">                           
-                                           function draw() {<br />
-                                              &nbsp;&nbsp;&nbsp;&nbsp;//draw something;<br />                             
-                                              &nbsp;&nbsp;&nbsp;&nbsp; window.requestAnimationFrame(draw);<br />                             
-                                            }<br />
-                                              window.requestAnimationFrame(draw); 
-                                        </div> 
-                                        <div  style="width: 100%;  height:50%; float:left; margin-top:80px;">                  
-                                            Browser will draw the animation at the<br />   <font style="color:#FF4447; font-size: 2.5rem; font-weight: bold; ">next available opportunity</font> <br /> 
-                                            and not at a predetermined interval
-                                       </div>
-                               </div>                              
-
-                                <div style="width: 44%;  height:100%; float:right; margin-top:8px;">
-                                        <div id=animRA></div>
-                                 </div>
-                        </div>
-                       
-                        <script>
-   // requestAnim shim layer by Paul Irish
-    window.requestAnimFrame = (function(){
-      return  window.requestAnimationFrame       || 
-              window.webkitRequestAnimationFrame || 
-              window.mozRequestAnimationFrame    || 
-              window.oRequestAnimationFrame      || 
-              window.msRequestAnimationFrame     || 
-              function(/* function */ callback, /* DOMElement */ element){
-                window.setTimeout(callback, 1000 / 60);
-              };
-    })();
-  
-
-// example code from mr doob : http://mrdoob.com/lab/javascript/requestanimationframe/
-var canvas, context, toggle;
-init();
-animate();
-function init() {
-    canvas = document.createElement( 'canvas' );
-    canvas.width = 512;
-    canvas.height = 512;
-    context = canvas.getContext( '2d' );    
-    var el = document.getElementById("animRA");
-    el.appendChild( canvas );
-}
-
-function animate() {
-    requestAnimFrame( animate );
-    draw();
-}
-
-function draw() {
-    var time = new Date().getTime() * 0.002;
-    var x = Math.sin( time ) * 192 + 256;
-    var y = Math.cos( time * 0.9 ) * 192 + 256;
-    toggle = !toggle;
-
-    context.fillStyle = toggle ? '#FF4447' :  '#5EA8A7';
-    context.beginPath();
-    context.arc( x, y, 10, 0, Math.PI * 2, true );
-    context.closePath();
-    context.fill();
-
-}
-
-  </script> 
+            <div class="slide slide-back-white slide12">
+                <header>JS ANIMATION: requestAnimationFrame</header>   
+                <section>
+                    <div>
+                        <div>                  
+                                <div class=codeS>                           
+                                   function draw() {<br />
+                                      &nbsp;&nbsp;&nbsp;&nbsp;//draw something;<br />                             
+                                      &nbsp;&nbsp;&nbsp;&nbsp; window.requestAnimationFrame(draw);<br />                             
+                                    }<br />
+                                      window.requestAnimationFrame(draw); 
+                                </div> 
+                                <div>                  
+                                    Browser will draw the animation at the<br />
+                                    <span>next available opportunity</span> <br /> 
+                                    and not at a predetermined interval
+                               </div>
+                       </div> 
+                        <div>
+                                <div id=animRA></div>
+                         </div>
+                     </div>                     
+                    </section>
             </div>
             <!-----------------------------------------------------------------------------------------------------------Slide 13-->
-            <div class="slide slide-back-white">
-                    <font style="color:#257985; font-size: 3.7rem; font-weight: bold; margin-left:57px; margin-top:50px;">WHEN TO USE JS ANIMATION</font>
-                    <br /><br /><br /><br />
-                    <ul style="color:black; font-size: 3rem;  margin-left:50px;">
+            <div class="slide slide-back-white slide13">
+                    <header>WHEN TO USE JS ANIMATION</header>
+                <section>                   
+                    <ul>
                         <li class=big><a target="_blank" class=slink href=" http://codepen.io/GreenSock/pen/kingu">Animate in a truly distinct way on a single element</a></li>                       
-                        <li class=big><a target="_blank" class=slink href="http://codepen.io/GreenSock/pen/AwCKp">Need</a> to have a significant control over animations or to stop, pause, slow-down or reverse it
-</li>
+                        <li class=big><a target="_blank" class=slink href="http://codepen.io/GreenSock/pen/AwCKp">Need</a> to have a significant control over animations or to stop, pause, slow-down or reverse it</li>
                         <li class=big><a target="_blank" class=slink href="https://css-tricks.com/examples/SmoothPageScroll">Animate the scroll position </a></li>                        
                     </ul>
+                  </section>
             </div>    
-           <!-----------------------------------------------------------------------------------------------------------Slide 14-->
-            <div class="slide slide-back-white">
-                <font style="color:#257985; font-size: 3.7rem; font-weight: bold; margin-left: 27px">WHEN TO USE JS ANIMATION</font>
-             <br /><br /><br />
-                     <ul style="color:black; font-size: 3rem;  margin-left:20px;">
+            <!-----------------------------------------------------------------------------------------------------------Slide 14-->
+            <div class="slide slide-back-white slide14">
+                <header>WHEN TO USE JS ANIMATION</header>
+                <section>           
+                     <ul>
                         <li>Add callbacks at certain spots</a></li>
-                    </ul>                  
-
-                    <div class="container" style="margin-top:45px;position:relative;margin-left: 30px;">
-
-                        <div id="container" class="container" style="margin-top: 34px;border-bottom:5px solid black; height: 300px;width:400px;float:left; padding-left:30px;vertical-align:top;position:relative;">
-
+                    </ul> 
+                    <div class="container" >
+                        <div id="container" class="container">
                             <div class="element"></div>
-
                         </div>
-
-                        <div class="codeS" style="vertical-align:top; float:right;font-size: 2rem;margin-right:77px; ">
+                        <div class="codeS">
                             transitionEndEventName = {<br />
                             &nbsp;&nbsp;&nbsp;&nbsp;'transition': 'transitionend',<br />
                             &nbsp;&nbsp;&nbsp;&nbsp;'MozTransition': 'transitionend',<br />
@@ -500,201 +364,79 @@ function draw() {
                             element.addEventListener(<br />
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transitionEndEventName(),<br />
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;callback);
-
                         </div>
-                        <div style="clear:both;"></div>
-                        <div id="output" style="font-size:1.7rem; margin-top:-38px;"></div>
-                        <script>
-                            var defaults = {
-                                easing: ''
-                            };
-
-                            $.fn.transition = function (properties, options) {
-                                var $el = $(this);
-                                options = $.extend({}, defaults, options);
-                                properties['transition'] = 'all ' + options.duration + 'ms ' + options.easing;
-
-                                $el.queue(function () {
-                                    $el.one('transitionend webkitTransitionEnd', function (e) {
-                                        $el.dequeue();
-                                        if (options.complete) options.complete.apply($el);
-                                    });
-                                    $el.css(properties);
-                                });
-
-                                return this;
-                            };
-                            var flag = false;
-
-                            $('.element').on("click", function () {
-                                if (!flag) {
-                                    var o = $("#output");
-                                    $('.element')
-                                        .transition({ marginLeft: 100 }, {
-                                            duration: 2000,
-                                            complete: function () {
-                                                this.html("<div style='margin:0 auto;vertical-align: middle;text-align: center;font-size: 4.6rem;'>1</div>");
-                                                o.html("<div style='margin:0 auto;'><b>marginLeft</b> change <font style='font-size:2.5rem; color: #FF4447;'>completed</font></div>");
-                                            }
-                                        })
-                                        .transition({ marginTop: 195, width: 150 }, {
-                                            duration: 2000,
-                                            complete: function () {
-                                                 this.html("<div style='margin:0 auto;vertical-align: middle;text-align: center;font-size: 4.6rem;'>2</div>");
-                                                o.html(o.html() + "<b>marginTop</b> and <b>width</b> change <font style='font-size:2.5rem; color: #FF4447;'>completed</font>");
-
-                                            }
-                                        });
-                                    flag = true;
-
-                                } else {
-                                    flag = false;
-                                    $('.element').css({ marginLeft: 0, marginTop: 0, width: 100 });
-                                    $("#output").html("");
-                                    $('.element').html("");
-                                }
-                            });
-
-                        </script>
-
+                        <div class="clearboth"></div>
+                        <div id="output"></div>
                     </div>
-             
+             </section>
             </div>
             <!-----------------------------------------------------------------------------------------------------------Slide 15-->
-            <div class="slide slide-back-white">
-              
-                    <font style="color:#257985; font-size: 3.7rem; font-weight: bold; margin-left: 27px">WHEN TO USE JS ANIMATION</font>
-                <br /><br /><br />
-                     <ul style="color:black; font-size: 3rem;  margin-left:20px;">
-                         <li>Use interesting eases like elastic, bow, etc.</li>
-                    </ul>
-                    
-               <div style="margin-left:146px;">
-                    <div  >
-                        <div style="display:inline-block;vertical-align:top; padding-right:50px; font-size: 2rem;margin-top:35px;margin-right: 11px;"><span > Bow function: </span></div>
-                        
-                      <div style="display:inline-block;    vertical-align: top;margin-right:101px; margin-top:35px;">
-                         <div onclick="move(this.children[0], back)" class="example_path" ><div class="example_block"></div></div>
-                        
-                          </div>
-                          <img src="images/back.png" width="100" >
-                    </div>
-                    <br />
-                    <div >
-                       
-                        <div  style="width:66%;    display: inline-block;margin-right: 88px;" >
-                            <div  >
-                               <span style="vertical-align:top;  font-size: 2rem;margin-right: 11px;">  Elastic function:&nbsp;&nbsp;&nbsp;</span>
-                               <div style="display:inline-block;    vertical-align: top">
-                                     <div onclick="move(this.children[0], elastic, 2000)" class="example_path" ><div class="example_block"></div></div>                         
+            <div class="slide slide-back-white slide15">              
+                    <header>WHEN TO USE JS ANIMATION</header>
+                <section>               
+                     <ul>
+                         <li>Use interesting eases like elastic, <a target="_blank" class=slink href="http://cubic-bezier.com/#.77,-0.38,.56,.7">bow</a>, etc.</li>
+                    </ul>                    
+                    <div>
+                         <div>
+                             <div><span > Bow function: </span></div>
+                             <div>
+                                <div id="bowMove" class="example_path" ><div class="example_block"></div></div>
+                              </div>
+                              <img src="images/back.png" width="100" >
+                        </div>                       
+                        <div>
+                            <div>
+                                <div>
+                                   <span>Elastic function:&nbsp;&nbsp;&nbsp;</span>
+                                   <div>
+                                         <div id="elasticMove" class="example_path" ><div class="example_block"></div></div>                         
+                                    </div>
+                                </div>
+                                 <div>
+                                    <span >  Bounce function:&nbsp;&nbsp;&nbsp;</span>
+                                     <div>
+                                        <div id="bounceMove" class="example_path" ><div class="example_block"></div></div>                         
+                                    </div> 
                                 </div>
                             </div>
-                            
-                            
-                             <div style="margin-top: 40px;">
-                             <span style="vertical-align:top;  font-size: 2rem;">  Bounce function:&nbsp;&nbsp;&nbsp;</span>
-                                   <div style="display:inline-block;    vertical-align: top;">
-                                <div onclick="move(this.children[0], bounce, 2000)" class="example_path" ><div class="example_block"></div></div>                         
-                                </div> 
-                            
+                             <div >
+                                <img src="images/elastic.png" width="100">
                             </div>
-                            
-                        </div>
-                        
-                         <div style="display:inline-block;">
-                        <img src="images/elastic.png" width="100">
-                        </div>
-                    </div>
-                   
+                        </div>                   
                    </div>
-                    <div style="    margin-left: 146px; font-size: 2rem;">
-                    <textarea id="textExample" rows="4" cols="60">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </textarea>
-                  </div>
-                  <script>
-            function animate1(opts) {
-                var start = new Date
-                var id = setInterval(function () {
-                    var timePassed = new Date - start
-                    var progress = timePassed / opts.duration
-                    if (progress > 1) progress = 1
-                    var delta = opts.delta(progress)
-                    opts.step(delta)
-                    if (progress == 1) { clearInterval(id) }
-                }, opts.delay || 10)
-            }
-            function elastic(progress) { return Math.pow(2, 10 * (progress - 1)) * Math.cos(20 * Math.PI * 1.5 / 3 * progress) }
-            function linear(progress) { return progress }
-            function quad(progress) { return Math.pow(progress, 2) }
-            function quint(progress) { return Math.pow(progress, 5) }
-            function circ(progress) { return 1 - Math.sin(Math.acos(progress)) }
-            function back(progress) { return Math.pow(progress, 2) * ((1.5 + 1) * progress - 1.5) }
-            function bounce(progress) {
-                for (var a = 0, b = 1, result; 1; a += b, b /= 2) {
-                    if (progress >= (7 - 4 * a) / 11) {
-                        return -Math.pow((11 - 6 * a - 11 * progress) / 4, 2) + Math.pow(b, 2);
-                    }
-                }
-            }
-           
-            function move(element, delta, duration) {
-                var to = 400
-                animate1({ delay: 10, duration: duration || 1000, delta: delta, step: function (delta) { element.style.left = to * delta + "px" } })
-            }
-                      
-                       var textArea = document.querySelector("#textExample");
-                      textArea.addEventListener("click", animateText);
-                      
-                      function animateText() {
-                       //   var textArea = document.querySelector("#textExample");
-                          var text = textArea.value;
-                          var to = text.length,
-                            from = 0;
-
-                          animate1({
-                            duration: 5000,
-                            delta: bounce,
-                            step: function(progress) {
-                              var result = (to - from) * progress + from;
-                              textArea.value = text.substr(0, Math.ceil(result))
-                            }
-                          });
-                      }
-           
-        </script>
-              
+                    <div>
+                        <textarea id="textExample" rows="4" cols="60">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </textarea>
+                  </div>               
+              </section>
             </div>
-<!-----------------------------------------------------------------------------------------------------------Slide 16-->
-            <div class="slide slide-back-white">
-           
-                   
-                    <font style="color:#257985; font-size: 3.7rem; font-weight: bold; margin-left: 27px; margin-bottom:20px;">JS ANIMATION LIBRARIES</font>
-                    <br /><br /><br />             
- <br /><br />
-                    <ul style="color:black; font-size: 3rem;  margin-left:50px;">
+            <!-----------------------------------------------------------------------------------------------------------Slide 16-->
+            <div class="slide slide-back-white slide16">                   
+                    <header>JS ANIMATION LIBRARIES</header>
+                <section>                  
+                    <ul>
                         <li>GSAP - a fast, richly-featured animation platform</li>
                         <li>Velocity.js - a lightweight tool for improving UI animation performance and workflow</li>
                         <li>TweenJs - a JavaScript library for tweening and animating HTML5 and JavaScript properties</li> 
                         <li>jQuery - quite slow in terms of animation performance</li>
-                    </ul>            
+                    </ul>   
+                    </section>
             </div>
-<!-----------------------------------------------------------------------------------------------------------Slide 16-->
-            <div class="slide slide-back-white">
-           
-                   
-                    <font style="color:#257985; font-size: 3.7rem; font-weight: bold; margin-left: 27px; margin-bottom:20px;">PERFORMANCE</font>
-                    <br /><br /><br />             
- <br /><br />
-                    <div class=codeS style="color:white; font-size: 3rem;      margin-left: 22px; width: 95%;">
+            <!-----------------------------------------------------------------------------------------------------------Slide 17-->
+            <div class="slide slide-back-white slide17"> 
+                <header>PERFORMANCE</header>
+                <section>                   
+                    <div class=codeS>
                      Browsers are able to optimize rendering flows. In summary, we should always try to create our animations using CSS transitions/animations where possible. If your animations are really complex, you can may have to rely on JavaScript-based animations instead.
                     </div>  
-                <div style="color:black; font-size: 2rem;  margin-left:659px;">
+                <div >
                 The Mozilla Developer Network (MDN) 
                 </div>
+                </section>
             </div>
-    <!-----------------------------------------------------------------------------------------------------------END-->
+          <!-------------------------------------------------------------------------------------------------------------END-->
         </div>
-    </div>
-    <!-----------------------------------------------------------------------------------------------------------END-->
+    </div>   
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         (function (b, o, i, l, e, r) {

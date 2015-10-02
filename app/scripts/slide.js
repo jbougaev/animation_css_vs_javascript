@@ -1,6 +1,6 @@
 // JavaScript Document
 // Makes the slidedeck work
-
+//https://github.com/estelle/CSS-Workshop/blob/master/slides.js
 (function() {
 	var doc = document,
 	    disableBuilds = true,

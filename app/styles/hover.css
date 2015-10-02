@@ -17,9 +17,17 @@
 
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
-.hovercss a{
-    text-decoration:none; 
-    
+.hovercss{   
+  
+}
+
+.hovercss a{  
+   margin-left: 20px;
+}
+
+.hovercss h2{
+    font-weight:bold;
+    margin-left:23px;
 }
 
 
@@ -346,6 +354,7 @@ a {
   margin-bottom: 2em;
   line-height: 1.4;
   font-size: 1.2em;
+
 }
 
 .ad a {
