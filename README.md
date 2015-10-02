@@ -1,7 +1,7 @@
 # animation_css_vs_javascript
 References:
 
-http://blog.alexmaccaw.com/css-transitions
+http://blog.alexmaccaw.com/css-transitions <br/>
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
 http://www.javascriptkit.com/dhtmltutors/css3-transitions-and-jquery2.shtml
 http://www.smashingmagazine.com/2011/09/the-guide-to-css-animation-principles-and-examples/
